@@ -1,8 +1,6 @@
-function setModeEventListener() {
-  let list = document.body.classList;
-  document.getElementById('toggler').addEventListener('change', (event) => {
-    list.toggle('dark-mode');
-  });
-}
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("dark-mode")
+})
 
 setModeEventListener();
